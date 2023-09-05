@@ -76,7 +76,7 @@ def detect_faces_and_rotate(image, max_rotation_attempts=4):
 
 
 def tess(img_path):
-    print("img_path: ", img_path)
+    print("tesseract img_path: ", img_path)
     img = cv2.imread(img_path)
     d = pytesseract.image_to_data(img, output_type=Output.DICT, config='--psm 1')
     d['text'] = [t.strip() for t in d['text'] if t.strip()]
