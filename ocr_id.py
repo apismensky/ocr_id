@@ -73,13 +73,13 @@ def rotate_bound(i, angle):
 
 
 def tess(img_path, cfg='--psm 1'):
-    print("tesseract img_path: ", img_path)
+    print("img_path: ", img_path)
     img = cv2.imread(img_path)
-    d = pytesseract.image_to_data(img, output_type=Output.DICT, config=cfg)
+    d = pytesseract.image_to_data(img, output_type=Output.DICT, config=cfg, lang="script/Japanese")
     d['text'] = [t.strip() for t in d['text'] if t.strip()]
     txt = ' '.join(d['text'])
 
-    print(f"tesseract: {txt}")
+    print(f"extracted: {txt}")
     n_boxes = len(d['level'])
     for i in range(n_boxes):
         (x, y, w, h) = (d['left'][i], d['top'][i], d['width'][i], d['height'][i])
@@ -200,11 +200,11 @@ def get_number_from_filename(filename):
 total_truth_words = 0
 total_tess_correct_words = 0
 total_craft_correct_words = 0
-#total_crop_correct_words = 0
+total_crop_correct_words = 0
 
 for filename in os.listdir(source_folder):
 
-    if filename == 'sign.jpg' or filename == 'dubai.jpg' or filename == 'madaba.jpg' or filename == 'german.jpg' or filename == 'monument.jpg':
+    if filename == 'ticket.png' or filename == 'black.png':
     #if filename.endswith('az_90.jpg'):
     #if filename.endswith('.jpg') or filename.endswith('.png'):
 
@@ -249,7 +249,7 @@ for filename in os.listdir(source_folder):
         write_uzn_file(input_file, f"{source_folder}/{result}.uzn")
 
         # ready to run tesseract with CRAFT!
-        craft_result = execute_tesseract(rotated_image_path, '--psm 4')
+        craft_result = execute_tesseract(rotated_image_path, '--psm 4 -l script/Japanese')
         print(f"CRAFT result: {craft_result}")
         craft_correct_words, truth_words, craft_word_accuracy = calculate_word_accuracy(craft_result, truth)
         print(f"craft word_accuracy: {craft_word_accuracy}")
@@ -258,27 +258,27 @@ for filename in os.listdir(source_folder):
 
         total_craft_correct_words += craft_correct_words
 
-        # crops_folder = f'{output_dir}/{result}_crops'
+        crops_folder = f'{output_dir}/{result}_crops'
 
-        # res = []
-        # crops = os.listdir(crops_folder)
-        # crops_sorted = sorted(crops, key=get_number_from_filename)
-        #
-        # for crop in crops_sorted:
-        #     if crop.endswith('.jpg') or crop.endswith('.png'):
-        #         ip = os.path.join(crops_folder, crop)
-        #         tess_crop = tess(ip, cfg='--psm 7')
-        #         print(f"{filename}: {tess_crop}")
-        #         res.append(tess_crop)
-        # crop_result = ' '.join(res)
-        # print(f"CRAFT + tesseract result: {result}")
-        #
-        # crop_correct_words, truth_words, crop_word_accuracy = calculate_word_accuracy(crop_result, truth)
-        # print(f"crop word_accuracy: {crop_word_accuracy}")
-        # print(f"crop correct words: {crop_correct_words}")
-        # print(f"truth_words: {truth_words}")
-        #
-        # total_crop_correct_words += crop_correct_words
+        res = []
+        crops = os.listdir(crops_folder)
+        crops_sorted = sorted(crops, key=get_number_from_filename)
+
+        for crop in crops_sorted:
+            if crop.endswith('.jpg') or crop.endswith('.png'):
+                ip = os.path.join(crops_folder, crop)
+                tess_crop = tess(ip, cfg='--psm 7')
+                print(f"{filename}: {tess_crop}")
+                res.append(tess_crop)
+        crop_result = ' '.join(res)
+        print(f"CRAFT + tesseract result: {result}")
+
+        crop_correct_words, truth_words, crop_word_accuracy = calculate_word_accuracy(crop_result, truth)
+        print(f"crop word_accuracy: {crop_word_accuracy}")
+        print(f"crop correct words: {crop_correct_words}")
+        print(f"truth_words: {truth_words}")
+
+        total_crop_correct_words += crop_correct_words
 
         data = {
             "file": filename,
@@ -298,15 +298,14 @@ for filename in os.listdir(source_folder):
                         "word_accuracy": craft_word_accuracy,
                         "correct_words": craft_correct_words
                     }
+                },
+                {
+                    "crop": {
+                        "text": crop_result,
+                        "word_accuracy": crop_word_accuracy,
+                        "correct_words": crop_correct_words
+                    }
                 }
-                # },
-                # {
-                #     "crop": {
-                #         "text": crop_result,
-                #         "word_accuracy": crop_word_accuracy,
-                #         "correct_words": crop_correct_words
-                #     }
-                # }
             ]
         }
 
@@ -322,8 +321,8 @@ if total_truth_words > 0:
 print("total craft correct words: ", total_craft_correct_words)
 if total_truth_words > 0:
     print("total craft word accuracy: ", (total_craft_correct_words / total_truth_words) * 100)
-# print("total crop correct words: ", total_crop_correct_words)
-# if total_truth_words > 0:
-#     print("total crop word accuracy: ", (total_crop_correct_words / total_truth_words) * 100)
+print("total crop correct words: ", total_crop_correct_words)
+if total_truth_words > 0:
+    print("total crop word accuracy: ", (total_crop_correct_words / total_truth_words) * 100)
 craft.unload_craftnet_model()
 craft.unload_refinenet_model()

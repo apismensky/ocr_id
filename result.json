@@ -1,0 +1,58 @@
+[
+    {
+        "file": "ticket.png",
+        "results": [
+            {
+                "tesseract": {
+                    "correct_words": 1,
+                    "text": "Fa \u8a18 ) \u90e8 * \u66f8 Wh N23 ~ 1 - 12 \u5e78 \\ 1 , 23U \u3066 \u6d88 \u8b1b \u79d1 \u5165 \u8fbc\u307f) \u306f SE \u62c9 3 i J \u4e57\u8eca \u8005 JR \u9686 \u9593 0 120492 2 \u4e0a \u8996 \u524a \u70b9 \u795e \u6c5f \u4eba KS46 \u5104 \u884c 30493- \u660e",
+                    "word_accuracy": 4.545454545454546
+                }
+            },
+            {
+                "craft": {
+                    "correct_words": 1,
+                    "text": "\u9805 \u53ce \u66f8\n\n_ \u69d8\n\n\u30c9 bh\nHH\n\nZU23\n\nNN\n\nEE\n\n* 1 ,230 (\u6d88\u8cbb \u7a0e \u7b46 \u8fbc\u307f )\n\n\u306b \u30ec\u30c8\n\n\u8702 \u5546 \u786c\n\n\u6771\u548c \u8ef8 \u6e4a \u9769 \u304d Rke $'s\n\nH \u5f15 \u7a0e \u7533 \u5343\n\u4eba \u306b \u307e\u304d g\n7\n\n\u9593 \u6790 \u308b \u4eba 4\n\n\u4e0a \u795e \u96e3\n\n\u514b \u795e \u6c5f \u4eba \u306b K346 \u767a \u751f\n\n393- \u660e\n",
+                    "word_accuracy": 4.545454545454546
+                }
+            },
+            {
+                "crop": {
+                    "correct_words": 1,
+                    "text": "\u54e1 dy \u5bfa _ \u69d8 REN 4 SS EN  1 \u306e GU \u6d88 \u7e3e \u7c21 \u7b49 \u8fbc\u307f ) \u30af\u30c8: \u62c9 3 \u4e0a \u8cfc \u3093 \u5546\u54c1 fu \u3042 Rk $s  \u308b \u308b \u4eac\u90fd \u6642 4b \u501f \u884c 3T \u7d39 3- \u524d",
+                    "word_accuracy": 4.545454545454546
+                }
+            }
+        ],
+        "truth": "\u9818\u53ce\u66f8 Receipt \u9818\u53d6\u5e74 2023.-1.12 \u00a51,230(\u6d88\u8cbb\u7a0e\u7b49\u8fbc\u82cf) [\u30af\u30ec\u30b8\u30c3\u30c8\u6271\u3044] \u8cfc\u5165\u5546\u54c1 JR### JR tickets (20492 2) \u897f\u65e5\u672c\u65c5\u5ba2\u9244\u9053\u682a\u5f0f\u4f1a\u793e \u4eac\u90fd\u99c5(5)\u5377 \u4eac\u90fd\u99c5MK346\u767a\u884c 30493-01 \u69d8 \u5370\u7d19\u7a0e\u7533\u544a: \u4ed8\u306b\u3064\u304d\u5927\u6ce2 \u7a0e\u52d9\u7f72 \u627f\u8a8d \u6e08",
+        "truth_words": 22
+    },
+    {
+        "file": "black.png",
+        "results": [
+            {
+                "tesseract": {
+                    "correct_words": 13,
+                    "text": "\u4e0b\u8a18 \u306e \u3068 \u304a \u308a \u3001 \u5fa1 \u8acb\u6c42 \u7533\u3057 \u4e0a \u3052 \u307e \u3059 \u3002 \u682a \u5f0f \u4f1a \u793e \u30b9 \u30ad\u30e3 \u30ca \u4fdd \u5b58 \u548c\u725b \u540d \u30b9\u30c8 \u30ec\u30fc \u30b8 \u30d7 \u30ed \u30b8\u30a7 \u30af\u30c8 \u3012573-0011 2023/4/30 \u5927 \u962a \u5e02 \u5317 \u533a \u5927 \u6df1\u753a 3-1 \u5c71\u53e3 \u9280\u884c \u672c \u5e97 \u666e\u901a 1111111 \u30b0\u30e9 \u30f3 \u30d5 \u30ed\u30f3 \u30c8 \u5927 \u962a \u30bf \u30ef\u30fcB TEL : 06-6735-8055 \u62c5\u5f53 : ICS \u592a \u90ce 66,000 \u5186 (\u7a0e\u8fbc | \u30b5\u30f3 \u30d7\u30eb 1 1 \u5f0f | 32, \u30b5\u30f3 \u30d7\u30eb 2 1| \u5f0f | 18000 18,000 2,000 2,000",
+                    "word_accuracy": 31.70731707317073
+                }
+            },
+            {
+                "craft": {
+                    "correct_words": 15,
+                    "text": "\u4e0b\u8a18 \u306e \u3068 \u304a \u308a \u3001 \u5fa1 \u8acb\u6c42 \u7533\u3057 \u4e0a \u3052 \u307e \u3059 \u3002\n\n\u682a \u5f0f \u4f1a \u793e \u30b9 \u30ad\u30e3 \u30ca \u4fdd \u5b58\n\n\u30b9\u30c8 \u30ec\u30fc \u30b8 \u30d7 \u30ed \u30b8\u30a7 \u30af\u30c8\n\n\u3012573-0011\n\n2023/4/30\n\n\u5927 \u962a \u5e02 \u5317 \u533a \u5927 \u6df1\u753a 3-1\n\n\u5c71\u53e3 \u9280\u884c \u672c \u5e97 \u666e\u901a 1111111\n\n\u30b0\u30e9 \u30f3 \u30d5 \u30ed\u30f3 \u30c8 \u5927 \u962a \u30bf \u30ef\u30fcB\n\nTEL : 06-6735-8055\n\n\u62c5\u5f53 : ICS \u592a \u90ce\n\n66,000 \u5186 (\u7a0e\u8fbc )\n\n\u30b5\u30f3 \u30d7\u30eb 1\n\n1| \u5f0f\n\n32,000\n\n32,000\n\n\u30b5\u30f3 \u30d7\u30eb 2\n\n1| \u5f0f\n\n18000\n\n18,000\n\n2,000\n\n2,000.\n\n8,000\n\n8,000\n",
+                    "word_accuracy": 36.58536585365854
+                }
+            },
+            {
+                "crop": {
+                    "correct_words": 20,
+                    "text": "\u4e0b\u8a18 \u306e \u3068 \u304a \u308a \u3001 \u5fa1 \u8acb\u6c42 \u7533\u3057 \u4e0a \u3052 \u307e \u3059 \u3002 \u682a \u5f0f \u4f1a \u793e \u30b9 \u30ad\u30e3 \u30ca \u4fdd \u5b58 \u30b9\u30c8 \u30ec\u30fc \u30b8 \u30d7 \u30ed \u30b8\u30a7 \u30af\u30c8 \u4ef6 \u540d T573-0011 2023/4/30 \u5927 \u962a \u5e02 \u5317 \u533a \u5927 \u6df1\u753a 3-1 \u652f\u6255 \u671f\u9650 \u5c71\u53e3 \u9280\u884c \u672c \u5e97 \u666e\u901a 1111111 \u30b0\u30e9 \u30f3 \u30d5 \u30ed\u30f3 \u30c8 \u5927 \u962a \u30bf \u30ef\u30fcB \u632f\u8fbc \u5148 TEL : 06-6735-8055 \u62c5\u5f53 : ICS \u592a \u90ce 66,000 \u5186 (\u7a0e\u8fbc ) a \u6458\u8981 \u6570 \u91cd \u5358\u4f4d \u5358 \u4fa1 \u91d1\u984d \u30b5\u30f3 \u30d7\u30eb 1 1 \u5f0f 32,000 32,000 \u30b5\u30f3 \u30d7\u30eb 2 1 \u5f0f 18000 18,000 2,000 2,000' 8g,000' 2,000",
+                    "word_accuracy": 48.78048780487805
+                }
+            }
+        ],
+        "truth": "\u4e0b\u8a18\u306e\u3068\u304a\u308a\u3001\u5fa1\u8acb\u6c42\u7533\u3057\u4e0a\u3052\u307e\u3059\u3002  \u4ef6\u540d  \u652f\u6255\u671f\u9650  \u632f\u8fbc\u5148  \u5408\u8a08  \u30b5\u30f3\u30d7\u30eb1  \u30b5\u30f3\u30d7\u30eb2  |\u30b9\u30c8\u30ec\u30fc\u30b8\u30d7\u30ed\u30b8\u30a7\u30af\u30c8  2023/4/30  \u5c71\u53e3\u9280\u884c \u672c\u5e97 \u666e\u901a 1111111  66,000\u5186 (\u7a0e\u8fbc)  \u6458\u8981  \u6570\u91cf  1  1  \u5358\u4f4d  \u5f0f\u5f0f  \u682a\u5f0f\u4f1a\u793e\u30b9\u30ad\u30e3\u30ca\u4fdd\u5b58  T573-0011  \u5927\u962a\u5e02\u5317\u533a\u5927\u6df1\u753a3-1  \u30b0\u30e9\u30f3\u30d5\u30ed\u30f3\u30c8\u5927\u962a\u30bf\u30ef\u30fc B  TEL: 06-6735-8055  \u62c5\u5f53 : ICS\u592a\u90ce  \u5358\u4fa1  32,000  18000  2,000  8,000  \u91d1\u984d  32,000  18,000  2,000  8,000",
+        "truth_words": 41
+    }
+]
