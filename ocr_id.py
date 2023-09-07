@@ -271,7 +271,7 @@ for filename in os.listdir(source_folder):
                 print(f"{filename}: {tess_crop}")
                 res.append(tess_crop)
         crop_result = ' '.join(res)
-        print(f"CRAFT + tesseract result: {result}")
+        print(f"CRAFT + crop result: {crop_result}")
 
         crop_correct_words, truth_words, crop_word_accuracy = calculate_word_accuracy(crop_result, truth)
         print(f"crop word_accuracy: {crop_word_accuracy}")
