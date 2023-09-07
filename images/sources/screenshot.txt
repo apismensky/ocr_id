@@ -1,0 +1,14 @@
+Contest title and abstract
+A brief description of the competition, including what the particular task under evaluation is, why this competition is of interest to the ICDAR community, and the expected number of participants
+An outline of the competition schedule
+Description of the dataset to be used, and the evaluation process and metrics for submitted methods
+The names, contact information, and brief CVs of the competition organizers, outlining previous experience in performance evaluation and/or organizing competitions
+The following rules shall apply to the accepted Competitions:
+
+The name of competition must be standardized by starting with “ICDAR 2023” e.g. “ICDAR 2023 Competition on …” or “ICDAR 2023 … Competition.”
+Datasets used in the competitions must be made available after the end of the competitions.  Specifically, the training data and ground truth must be publicly released and there must be a way to evaluate performance on a test set. This could take the form of an evaluation server, or the test data, ground truth, and evaluation script could be made publicly available. In principle, the organizers should submit the dataset to IAPR TC10 or TC11.
+Evaluation methodologies and metrics used must be described in detail so that results can be replicated later.  Evaluation scripts must be released afterwards.
+Each competition has to be presented with a poster at a prominent place at the conference venue, and selected competitions will get the chance to be presented orally in the dedicated session mentioned above.
+Competitions must have a sufficient number of participants to be able to draw meaningful conclusions.
+Reports (full papers) on each competition will be reviewed and, if accepted (the competition ran according to plan, attracted a minimum level of participation and is appropriately described), will be published in the ICDAR 2023 conference proceedings.
+Participants should not have access to the ground-truthed test dataset until the end of the competition. The evaluation should be done by the organizers.

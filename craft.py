@@ -8,7 +8,7 @@ import os
 import numpy as np
 
 # Input image
-image_path = 'images/sources/AR.png'
+image_path = 'images/sources/screen.png'
 output_dir = 'outputs/'
 
 # create a craft instance
@@ -81,24 +81,24 @@ def main():
         rotated_image_path = image_path[:-4] + '_fixed.jpg'
 
     rotated_image_name = os.path.basename(rotated_image_path)
-    rotated_image_name_no_ext = os.path.splitext(rotated_image_name)[0]
+    #rotated_image_name_no_ext = os.path.splitext(rotated_image_name)[0]
 
     craft.detect_text(rotated_image_path)
 
-    crops_folder = f'{output_dir}{rotated_image_name_no_ext}_crops'
+    #crops_folder = f'{output_dir}{rotated_image_name_no_ext}_crops'
 
-    res = []
-    filenames = os.listdir(crops_folder)
-    filenames = sorted(filenames, key=get_number_from_filename)
+    #res = []
+    #filenames = os.listdir(crops_folder)
+    #filenames = sorted(filenames, key=get_number_from_filename)
 
-    for filename in filenames:
-        if filename.endswith('.jpg') or filename.endswith('.png'):
-            img_p = os.path.join(crops_folder, filename)
-            tess_result = tess(img_p)
-            print(f"{filename}: {tess_result}")
-            res.append(tess_result)
-    result = ' '.join(res)
-    print(f"CRAFT + tesseract result: {result}")
+    # for filename in filenames:
+    #     if filename.endswith('.jpg') or filename.endswith('.png'):
+    #         img_p = os.path.join(crops_folder, filename)
+    #         tess_result = tess(img_p)
+    #         print(f"{filename}: {tess_result}")
+    #         res.append(tess_result)
+    # result = ' '.join(res)
+    # print(f"CRAFT + tesseract result: {result}")
 
 
 if __name__ == "__main__":

@@ -22,7 +22,52 @@ def main():
     detected_text_googlecv = """SARKANSAS\nSAMPLE\nSTATE O\n9 CLASS D\n4d DLN 9999999993 DOB 03/05/1960\nNick Sample\nDRIVER'S LICENSE\n1 SAMPLE\n2 NICK\n8 123 NORTH STREET\nCITY, AR 12345\n4a ISS\n03/05/2018\n15 SEX 16 HGT\nM\n5'-10\"\nGREAT SE\n9a END NONE\n12 RESTR NONE\n5 DD 8888888888 1234\n4b EXP\n03/05/2026 MS60\n18 EYES\nBRO\nRKANSAS\n0"""
     detected_text_tesseract = "4d DL 999 as = Ne allo) 2NICK © , q 12 RESTR oe } lick: 5 DD 8888888888 1234 SZ"
     detected_text_easyocr = '''9 , ARKANSAS DRIVER'S LICENSE CLAss D 4d DLN 999999999 3 DOB 03/05/1960 ] 2 SCKPLE 123 NORTH STREET CITY AR 12345 ISS 4b EXP 03/05/2018 03/05/2026 15 SEX 16 HGT 18 EYES 5'-10" BRO 9a END NONE 12 RESTR NONE Ylck Sorble DD 8888888888 1234 THE'''
-    detected_text_craft = """     5ARKANSAS DRIVER’S LICENSE      9¥ CLASS LD     4a DLN. 999999999: pos 03/05/1960      1 SAMPLE     2NICK      8123 NORTH STREET     CITY, AR 12345     4bEXP     4aiss     03/05/2026 \/"— \     03/05/2018     1SSEX 16HGT     18 EYES     5'-10*     M     BRO     9a END NONE     12 RESTR NONE     Vick Cample     5 DD 8888888888 1234"""
+    #detected_text_craft = """     5ARKANSAS DRIVER’S LICENSE      9¥ CLASS LD     4a DLN. 999999999: pos 03/05/1960      1 SAMPLE     2NICK      8123 NORTH STREET     CITY, AR 12345     4bEXP     4aiss     03/05/2026 \/"— \     03/05/2018     1SSEX 16HGT     18 EYES     5'-10*     M     BRO     9a END NONE     12 RESTR NONE     Vick Cample     5 DD 8888888888 1234"""
+    detected_text_craft = """J ARKANSAS DRIVER'S LICENSE
+
+.
+
+yetass D
+
+4d DLN. 999999999; vos 03/05/1960
+
+Ww
+a
+=
+E
+no
+
+1 SAMPLE
+
+2NICK
+
+8123 NORTH STREET
+
+CITY, AR 12345
+
+4bEXP.
+
+4a1SS
+
+03/05/2026 (AK)
+
+03/05/2018
+
+AS SEX 16 HGT
+
+18 EYES
+
+p10"
+
+BRO
+
+9a END NONE
+
+12 RESTR NONE
+
+Yhick Sample
+
+5 DD 8888888888 1234"""
     truth_text = """USA ARKANSAS 
 DRIVER'S LICENSE
 9 CLASS D

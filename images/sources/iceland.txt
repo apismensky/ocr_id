@@ -1,0 +1,43 @@
+VEGABRÉF
+PASSPORT
+PASSEPORT
+8
+ÍSLAND
+Tegund/Type/Type
+PA
+ICELAND ISLANDE
+Vegabréf nr./Passport No./No. du passeport
+A3536444
+Kódi/Code/Code
+ISL
+Kenninafn/Surname/Nom
+ÆVARSDÓTTIR
+JÖKULSÁRLÓN
+Eiginnöfn/Given names/Prénoms
+ÞURÍÐUR ÖSP
+Þjóðerni/Nationality/Nationalité
+ÍSLENSKT/ICELANDIC / ISLANDAISE
+Fæðingardagur/Date of birth/Date de naissance
+12 DES/DEC 1912
+Fæðingarstaður/Place of birth/Lieu de naissance
+ISL: ÍSLAND
+Útgáfudagur/Date of issue/Date de délivrance
+12 MAR /MAR 2021
+Fellur úr gildi /Date of expiry/Date d'expiration
+10 MAR /MAR 2031
+Had/Height/Taille
+172 CM
+Kennitala/ Personal Id. No./No. d'ld personnel
+121212-1239
+Kyn/Sex/Sexe
+Stjórnvald/ Authority/Autorité
+O
+C+LACE-BLAD-CAME
+X
+CAN
+ÞJÓÐSKRÁ ÍSLANDS
+203030
+Undirskrift handhafa/ Holder's signature/Signature du titulaire
+Puridur Ösp
+PAISLAEVARSDOTTIR<<THURIDUR<OESP<<<<<<<<<<<<
+A3536444<7ISL1212123<3103108121212<1239<<<68

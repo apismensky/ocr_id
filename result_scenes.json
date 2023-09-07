@@ -1,0 +1,107 @@
+[
+    {
+        "file": "madaba.jpg",
+        "results": [
+            {
+                "tesseract": {
+                    "correct_words": 1,
+                    "text": "Sn Madaba _ TS",
+                    "word_accuracy": 33.33333333333333
+                }
+            },
+            {
+                "craft": {
+                    "correct_words": 3,
+                    "text": "Lisle 519\u00b0) 9S p<\n\nMadaba\n\nVisitor Center\n",
+                    "word_accuracy": 100.0
+                }
+            }
+        ],
+        "truth": "Madaba\nVisitor\nCenter\n",
+        "truth_words": 3
+    },
+    {
+        "file": "german.jpg",
+        "results": [
+            {
+                "tesseract": {
+                    "correct_words": 12,
+                    "text": "Leistunger fir ess: jie Konto iad Service + Anlage-und Wertpapierberatung & -> Finanzierung \u2014 > Immobilienvermittlung + Versicherungen + Bausparen Gerne \u201cBeaten wir Sie auch auRerhalb unserer Offnungszeten-",
+                    "word_accuracy": 54.54545454545454
+                }
+            },
+            {
+                "craft": {
+                    "correct_words": 16,
+                    "text": "Unser\u00ae\n\nPeistungen fur Sie:\n\nKonto und Service\n\nAnlage= ul nd\n\nWertpapierberatung\n\nFinanzierung\n\nImmobilienvermittlung\n\nVersicherungen\n\nBausparen\n\nGerne beraten wir Sie auch\nhall -nrerOffnung\n\nGerne beraten Wil > :\nauRerhalb inserer Offnungszerten\n",
+                    "word_accuracy": 72.72727272727273
+                }
+            }
+        ],
+        "truth": "\u00d6ffnungazeiten.\nunserer\nau\u00dferhalb\nGerne\nberaten\nwir\nsie\nauch\nBausparen\nVersicherungen\nImmobilienvermittlung\nFinanzierung\nWertpapierberatung\nservice\nund\nKonto\nSie:\nf\u00fcr\nLeistungen\nunsere\nAnlage\nund",
+        "truth_words": 22
+    },
+    {
+        "file": "sign.jpg",
+        "results": [
+            {
+                "tesseract": {
+                    "correct_words": 0,
+                    "text": "",
+                    "word_accuracy": 0.0
+                }
+            },
+            {
+                "craft": {
+                    "correct_words": 9,
+                    "text": "BALLAGHADERREEN\n\nHOST TOWN\n\nTO\n\nSpeciat Oxvmere\n\nWorto Games\n\nmons on,\n\nQATAR\n\nBank of Ireland\n",
+                    "word_accuracy": 69.23076923076923
+                }
+            }
+        ],
+        "truth": "GAMES\nSPECIAL\nTOWN\nTO\nQATAR\nHOST\nBank\nBALLAGHADERREEN\nIreland\nof\nOLYMPICS\nWORLD\n50\n",
+        "truth_words": 13
+    },
+    {
+        "file": "dubai.jpg",
+        "results": [
+            {
+                "tesseract": {
+                    "correct_words": 9,
+                    "text": "Underwater Zoo Auilall tlgys ayaa Level Shoe District @yaalll pdilo sa) \u2018The Dubai Fountain 9 dygal \u2018The Waterfall lia \u2014\u2014\u2014e| > Dubai Aquarium paylgsl vo",
+                    "word_accuracy": 81.81818181818183
+                }
+            },
+            {
+                "craft": {
+                    "correct_words": 8,
+                    "text": "Palos! ya\n\nDubai Aquarium\n\nUnderwater Zoo\n\nauilal Stlgssll ayaa\n\nalll allo Judd\n\nLevel Shoe District,\n\n\u2018The Dubai Fountain\n\nuP 6ygal\n\n\u2018The Waterfall\n\nill\n",
+                    "word_accuracy": 72.72727272727273
+                }
+            }
+        ],
+        "truth": "Aquarium\nUnderwater\nZoo\nLevel\nShoe\nDistrict\nThe\nDubai\nFountain\nThe\nWaterf",
+        "truth_words": 11
+    },
+    {
+        "file": "monument.jpg",
+        "results": [
+            {
+                "tesseract": {
+                    "correct_words": 9,
+                    "text": "U.S. DEPARTMENT OF THE INTERIOR Bureau of Land Management",
+                    "word_accuracy": 33.33333333333333
+                }
+            },
+            {
+                "craft": {
+                    "correct_words": 12,
+                    "text": "Si DEPARTMENT OF THE INTERIOF\n\n3ureau of Land Managemen\n\nHistoric\n\nRoute\n\n66\n\nNATIONAL BACK COUNTRY BYWAY\n",
+                    "word_accuracy": 44.44444444444444
+                }
+            }
+        ],
+        "truth": "BACK\nCOUNTRY\nOF\nTHE\nINTERIOR\nDEPARTMENT\nBureau\nU.S.\nof\nLand\nManagement\n66\nHistoric\nRoute\nNATIONAL\nBYWAY\nBack\nCountry\nU.S.\nDEPARTMENT\nOF\nTHE\nINTERIOR\nBUREAU\nOF\nLAND\nMANAGEMENT\n",
+        "truth_words": 27
+    }
+]
